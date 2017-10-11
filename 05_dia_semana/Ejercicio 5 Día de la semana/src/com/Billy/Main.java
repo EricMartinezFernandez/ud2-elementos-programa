@@ -15,11 +15,11 @@ public class Main {
         System.out.println("          -------------------------------");
 
         System.out.print("Escribe un numero entre 1 y 7: ");
-        double a = Double.parseDouble(br.readLine());
+        int a = Integer.parseInt(br.readLine());
 
         if (a > 1 && a < 7){
 
-            switch ((int) a){
+            switch (a){
                 case 1:
                     System.out.println("Lunes");
                     break;
