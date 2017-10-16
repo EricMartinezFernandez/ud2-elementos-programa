@@ -10,18 +10,31 @@ public class Main {
 	// write your code here
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
+        double a = 1;
+
         System.out.println("                  Valor absoluto");
         System.out.println("          -------------------------------");
 
-        System.out.print("Escribe un numero: ");
-        double a = Double.parseDouble(br.readLine());
 
-        double b = a * 2;
-               b = a - b;
+         do{
+             System.out.print("Escribe un numero: ");
+             a = Double.parseDouble(br.readLine());
 
-        System.out.print("El valor absoluto es: ");
-        System.out.print(a);
-        System.out.print(" y ");
-        System.out.print(b);
+             double b = a * 2;
+             b = a - b;
+
+             System.out.print("El valor absoluto es: ");
+             System.out.print(a);
+             System.out.print(" y ");
+             System.out.print(b);
+             System.out.println(" ");
+
+         } while (a != 0);
+
+        System.out.println("          -------------------------------");
+        System.out.println("                        Fin");
+
+
+
     }
 }
