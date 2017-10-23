@@ -19,12 +19,15 @@ public class Main {
         System.out.print("Introduzca la cantidad de numeros que desea sumar: ");
         int VueltasUsuario = Integer.parseInt(br.readLine());
 
-        while (vueltas < VueltasUsuario){
+        for (vueltas = 0; VueltasUsuario >  vueltas; vueltas++) {
+
             System.out.print("Introduzaca un numero: ");
             double a = Double.parseDouble(br.readLine());
             SumaTotal = SumaTotal + a;
-            vueltas++;
+
         }
+
+        
         System.out.println("          -------------------------------");
         System.out.print("El resultado de la suma es: ");
         System.out.print(SumaTotal);
